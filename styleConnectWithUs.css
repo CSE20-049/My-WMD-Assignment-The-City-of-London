@@ -1,135 +1,221 @@
-* {
-	margin: 0px;
-	padding: 0px;
-	font-family: Arial;
-}
-
-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 60px;
-	box-sizing: border-box;
-	background: rgba(0,0.1,7);
-	border-bottom: 1px solid #FFF;
-}
-
-nav .logo {
-	padding: 12px 30px;
-	line-height: 35px;
-	float: left;
-	font-family: Georgia, serif;
-	font-size: 24px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #FFF;
-	font-style: italic;
-}
-
-nav ul {
-	list-style: none;
-	float: right;
-	margin: 0;
-	padding: 0.5px 0px 0.5px 0px;
-	display: flex;
-}
-
-nav ul li a {
-	line-height: 55px;
-	color: #FFF;
-	padding: 12px 30px;
-	text-decoration: none;
-	font-size: 17px;
-	font-weight: bold;
-}
-
-nav ul li a:hover {
-	background: yellow;
-	border-radius: 30px;
-	text-transform: uppercase;
-	color: #262626;
-}
-
-nav a.active {
-	text-transform: uppercase;
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>LONDON</title>
+	<link rel = "shortcut icon" type = "image" href = "Images/London.png">
+	<link rel = "stylesheet" href = "styleConnectWithUS.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+	.newslettercontentbody{
+		padding: 20px;
+		background-color: #E5E3E3;
+		top: 15%;
+		padding-top: 20px;
+		width: 50%;
+		left: 26.5%;
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
+		position: absolute;
+		color: #191919;
+		border-radius: 42px;
+		box-shadow: 5px 11px 29px #0D3B6B; 
+	}
+	
+	h2{
+		text-align: center;
+		font-family: "Times New Roman", Times, serif;
+		font-size: 34px;
+	}
+	
+	input[type=text]{
+		width: 100%;
+		margin: 9px 0px;
+		display: inline-block;
+		padding: 10px;
+		box-sizing: border-box;
+		border-radius: 8px;
+	}
+	
+	.Country{
+		width: 100%;
+		margin: 2px 0px;
+		padding: 0px;
+		justify-content: center;
+		display: flex;
+		height: 27px;
+	}
+	
+	.Region{
+		width: 100%;
+		margin: 6px 0px;
+		padding: 0px;
+		justify-content: center;
+		display: flex;
+		height: 30px;
+	}
+	
+	h4{
+		text-align: center; 
+		line-height: 30px; 
+		font-weight: lighter; 
+	}
+	
+	.newsletters{
+		width: 100%;
+		margin: 8px 0px;
+		padding: 0px;
+		justify-content: center;
+		text-align: center;
+		word-spacing: 7px;
+	}
+	
+	.Subscribebutton{
+		text-align: center:
+	}
+	
+	.Subscribebutton a{
+		text-decoration: none;
+		border: 2px solid #FFF;
+		border-radius: 15px;
+		font-size: 19px;
+		padding: 10px 25px;
+		color: #F7F6F6;
+		display: inline-block;
+		font-family: poppins;
+		text-transform: uppercase;
+		 letter-spacing: .5px;
+		 margin-left: 39.5%;
+		 background: rgba(0,0,0,0.7);
+	}
+	
+	.Subscribebutton a:hover {
+	background: rgba(0,0,0,0.7);
 	color: rgba(16,148,224);
-	transition: 2;
-	border-bottom: 4px solid white;
-	border-bottom-width: medium;
-	border-bottom-style: groove;
-}
+	transition: 2s;
+	border-color: #262626;
+	}
+	
+	@media screen and ( max-width: 710px) {
+		footer {
+			margin-top: 65px;
+		}
+		
+		.Subscribebutton {
+			margin-right: 128px;
+		}
+		
+		.newsletters {
+			font-size: 11px;
+			padding: 0px;
+		}
+		
+		.newslettercontentbody {
+			margin-right: 20px;
+			max-width: 57%;
+		}
+	}
+	
+	</style>
+	
+</head>
 
-section {
-	width: 100%;
-	min-height: auto;
-}
+<body>
 
-footer {
-	position: absolute;
-	min-height: 25px;
-	width: 100%;
-	background: rgba(0,0.1,7);
-	padding-top: 15px;
-	color: #FFF;
-	font-family: Arial;
-} 
+	<nav>
+			<div class = "logo">
+					<p>L O N D O N</p>
+			</div>
+			
+			<ul>
+				<li><a href = "Index.html">Home</a></li>
+				<li><a href = "About.html">About</a></li>
+				<li><a href = "Lifestyle.html">Lifestyle</a></li>
+				<li><a href = "Events.html">Events</a></li>
+				<li><a class = "active" href = "#">Connect With Us</a></li>
+			</ul>	
+	</nav>
+	
+	<section>
+		<form action = "action_page.php">
+				<div class = "newslettercontentbody">
+					<h2>Subscribe to our newsletters</h2><br>
+					
+						<form>
+							<input type = "text" name = "first_name" placeholder = "Enter email" />
+				
+							<input type = "text" name = "first_name" placeholder = "Enter name" />
 
-.footer-content {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-}
-
-.footer-content h3 {
-	font-size: 21px;
-	font-weight: bold;
-	text-transform: capitalize;
-	line-height: 4px;
-	text-transform: uppercase;
-	margin-top: 2px;
-}
-
-.socials {
-	list-style: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 25px 0px 12px 7px;
-}
-
-.socials li {
-	margin: 0 15px;
-}
-
-.socials a {
-	text-decoration: none;
-	color: #FFF;
-	font-size: 35px;
-	letter-spacing: 15px;
-}
-
-.socials a i {
-	transition: color .4s ease;
-}
-
-.socials a:hover  {
-	color: orange;
-}
-
-.footer-bottom {
-	width:100%;
-	padding: 10px 0;
-	text-align: center;
-}
-
-.footer-bottom p {
-	font-size: 14px;
-	word-spacing: 2px;
-	text-transform: capitalize;
-	margin-left: 1px;
-	padding-bottom: 1px;
-	margin-bottom: -7px;
-}
+							<input type = "text" name = "last_name" placeholder = "Enter surname" />
+						
+							<h4 style = "text-align: center; line-height: 20px; font-weight: lighter;"><b>Country</b></h4>
+							<div class = "Country">
+							<select name = "dropdown">
+									<option value = "Botswana" selected>Botswana</option>
+									<option value = "South Africa" selected>South Africa</option>
+									<option value = "Angola" selected>Angola</option>
+									<option value = "Mozambique" selected>Mozambique</option>
+									<option value = "Germany" selected>Germany</option>
+									<option value = "France" selected>Italy</option>
+									<option value = "United Kingdom" selected>United Kingdom</option>
+									<option value = "Poland" selected>Poland</option>
+									<option value = "Sweden" selected>Sweden</option>
+									<option value = "Croatia" selected>Croatia</option>
+							</select>
+							</div>
+							
+							<h4 style = "margin-bottom: -9.5px; font-family: Roboto, Arial, sans-serif;"><b>Region</b></h4>
+				
+							<div class = "Region">
+							<select name = "dropdown">
+									<option value = "Northern Africa" selected>Northern Africa</option>
+									<option value = "Eastern Africa" selected>Eastern Africa</option>
+									<option value = "Middle Africa" selected>Middle Africa</option>
+									<option value = "Southern Africa" selected>Southern Africa</option>
+									<option value = "Western Africa" selected>Western Africa</option>
+									<option value = "North Europe" selected>North Europe</option>
+									<option value = "West Europe" selected>West Europe</option>
+									<option value = "Central Europe" selected>Central Europe</option>
+									<option value = "South Europe" selected>South Europe</option>
+									<option value = "South East Europe" selected>South East Europe</option>
+							</select>
+							</div>
+					
+						
+						<h4 style = "margin-bottom: -4.5px; font-family: Roboto, Arial, sans-serif;"><b>Choose any newsletter of your choice</b></h4>
+								
+						
+							<div class = "newsletters">
+							<input type = "checkbox" name = "FutureofLondon" value  = "on"> FutureofLondon
+							<input type = "checkbox" name = "Londonist" value  = "on"> Londonist
+							<input type = "checkbox" name = "MyLondon" value  = "on"> MyLondon
+							<input type = "checkbox" name = "WildLondon" value  = "on"> WildLondon
+							</div>
+						
+				
+							<div class = "Subscribebutton" >
+									<br><br><a href = "thankyou.html">Subscribe</a>
+							</div>		
+						
+						</form>
+				</div>
+		</form>
+	</section>
+	
+	
+	<footer>
+			<div class = "footer-content">
+				<h3>Follow us</h3>
+				<ul class = "socials">
+						 <li><a href = "#"<i class = "fa fa-facebook"></i></a></li>
+						 <li><a href = "#"<i class = "fa fa-twitter"></i></a></li>
+						 <li><a href = "#"<i class = "fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+			<div = class = "footer-bottom">
+					<p>copyright &copy;2020 London. designed by outule</p>
+			</div>
+	</footer>
+</body>
+</html>
