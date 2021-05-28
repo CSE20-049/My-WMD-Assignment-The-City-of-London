@@ -5,14 +5,13 @@
 }
 
 nav {
-	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 60px;
 	box-sizing: border-box;
-	background: rgba(0,0,0,1.3);
-	border-bottom: 1px solid #FFF;
+	background: rgba(0,0.1,7);
+	border-bottom; 1px solid #FFF;
 }
 
 nav .logo {
@@ -62,7 +61,7 @@ nav a.active {
 
 section {
 	width: 100%;
-	min-height: auto;
+	min-height: 100vh;
 }
 
 footer {
@@ -133,4 +132,3 @@ footer {
 	padding-bottom: 1px;
 	margin-bottom: -7px;
 }
-
