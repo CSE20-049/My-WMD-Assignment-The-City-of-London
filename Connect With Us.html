@@ -4,71 +4,121 @@
 	<meta charset = "UTF-8">
 	<title>LONDON</title>
 	<link rel = "shortcut icon" type = "image" href = "Images/London.png">
-	<link rel = "stylesheet" href = "styleEvents.css">
+	<link rel = "stylesheet" href = "styleConnectWithUS.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-
-	h1{
-		text-align: center;
-		letter-spacing: 4px;
-		margin-top: 1.2%;
-		font-size: 39px;
-		font-family:Courier New;
+	
+	<style>
+	.newslettercontentbody{
+		padding: 20px;
+		background-color: #E5E3E3;
+		top: 15%;
+		padding-top: 20px;
+		width: 50%;
+		left: 26.5%;
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
+		position: absolute;
+		color: #191919;
+		border-radius: 42px;
+		box-shadow: 5px 11px 29px #0D3B6B; 
 	}
 	
-	h3{
+	h2{
 		text-align: center;
-		font-family:Courier New;
-		font-size: 25px;
+		font-family: "Times New Roman", Times, serif;
+		font-size: 34px;
 	}
 	
-	#images{
-		margin-left: 7.6%;
-		height: 550px;
-		width: 910px; 
-		display: block; 
-		margin-left: auto; 
-		margin-right: auto; 
-		box-shadow: 4px 4px 5px #707272; 
-		border-radius: 6px;
+	input[type=text]{
+		width: 100%;
+		margin: 9px 0px;
+		display: inline-block;
+		padding: 10px;
+		box-sizing: border-box;
+		border-radius: 8px;
 	}
 	
-	#p1, #p2,#p3,#p4, #p5{
-		font-family: Roboto, Arial, sans-serif;
+	.Country{
+		width: 100%;
+		margin: 2px 0px;
+		padding: 0px;
+		justify-content: center;
+		display: flex;
+		height: 27px;
+	}
+	
+	.Region{
+		width: 100%;
+		margin: 6px 0px;
+		padding: 0px;
+		justify-content: center;
+		display: flex;
+		height: 30px;
+	}
+	
+	h4{
+		text-align: center; 
+		line-height: 30px; 
+		font-weight: lighter; 
+	}
+	
+	.newsletters{
+		width: 100%;
+		margin: 8px 0px;
+		padding: 0px;
+		justify-content: center;
 		text-align: center;
-		line-height: 28px;
-		font-size: 21px;
-		padding-left: 25px;
-		font-weight: normal;
-		margin-left: auto;
-		margin-right: auto;
-		font-size: 1em;
-		color: #515252;"
+		word-spacing: 7px;
+	}
+	
+	.Subscribebutton{
+		text-align: center:
+	}
+	
+	.Subscribebutton a{
+		text-decoration: none;
+		border: 2px solid #FFF;
+		border-radius: 15px;
+		font-size: 19px;
+		padding: 10px 25px;
+		color: #F7F6F6;
+		display: inline-block;
+		font-family: poppins;
+		text-transform: uppercase;
+		 letter-spacing: .5px;
+		 margin-left: 39.5%;
+		 background: rgba(0,0,0,0.7);
+	}
+	
+	.Subscribebutton a:hover {
+	background: rgba(0,0,0,0.7);
+	color: rgba(16,148,224);
+	transition: 2s;
+	border-color: #262626;
 	}
 	
 	@media screen and ( max-width: 710px) {
-		#images {
-			max-width: 400px;
-			height: 250px;
+		footer {
+			margin-top: 65px;
 		}
 		
-		#p1, #p2,#p3,#p4, #p5, h3, h1 {
-				margin: 0;
-				padding: 0;
-				justify- content: center;
-				aligh-items: center;
-				min-height: auto;
-				margin-left: 20px;
-				margin-right: 20px;
-				margin-top: 4px;
-			}
+		.Subscribebutton {
+			margin-right: 128px;
+		}
+		
+		.newsletters {
+			font-size: 11px;
+			padding: 0px;
+		}
+		
+		.newslettercontentbody {
+			margin-right: 20px;
+			max-width: 57%;
+		}
 	}
 	
-
-</style>
-
-
+	</style>
+	
 </head>
 
 <body>
@@ -79,99 +129,78 @@
 			</div>
 			
 			<ul>
-				<li><a href = "index.html">Home</a></li>
+				<li><a href = "Index.html">Home</a></li>
 				<li><a href = "About.html">About</a></li>
 				<li><a href = "Lifestyle.html">Lifestyle</a></li>
-				<li><a class = "active" href = "#">Events</a></li>
-				<li><a href = "Connect With Us.html">Connect With Us</a></li>
+				<li><a href = "Events.html">Events</a></li>
+				<li><a class = "active" href = "#">Connect With Us</a></li>
 			</ul>	
 	</nav>
 	
 	<section>
-		<br><br><br><br><h1>EVENTS IN LONDON</h1>
-		
-		<br><h3 style = "text-transform: uppercase;">Upcoming and Past Events</h3>
-		
-		<br><h3 style = "font-size: 24px; font-weight: 520; font-style:oblique;">May 2021</h3><br>
-		<h3 style = "font-size: 24px; font-weight: 520; ">	Scenes in the Square at Leicester Square</h3><br>
-		
-		<img src="https://www.leicestersquare.london/wp-content/uploads/2020/09/Z6S4353-small-1024x681.png" alt="A picture of  statue" id = "images">
-		
-		<br><p id = "p1">See big-screen icons at Scenes in the Square at Leicester Square, an interactive trail of statues in London, right in the heart of the<br>
-										capital’s home of film. Spot some of your favourite film stars and characters across Leicester Square as you follow the interactive<br>
-										Scenes in the Square bronze statue trail.<br><br> 
+		<form action = "action_page.php">
+				<div class = "newslettercontentbody">
+					<h2>Subscribe to our newsletters</h2><br>
+					
+						<form>
+							<input type = "text" name = "first_name" placeholder = "Enter email" />
+				
+							<input type = "text" name = "first_name" placeholder = "Enter name" />
 
-										The Scenes in the Square trail celebrates Britain’s love for films and encompasses iconic characters from the past century to the<br>
-										heart of London’s home of film. Take a selfie with the one and only Bugs Bunny, before stumbling upon more stars including<br>
-										Laurel and Hardy, Mary Poppins, Mr. Bean and the adorable Paddington. Not forgetting Batman hiding on the rooftop and<br>
-										Wonder Woman emerging from a wall! What’s more? The statues come to life in the evening with lights – and the trail<br>
-										incorporates music.</p>
-										
-		<br><h3 style = "font-size: 24px; font-weight: 520; font-style:oblique;">From 07 July 2021 to 18 July 2021</h3>
-		<br><h3 style = "font-size: 24px; font-weight: 520; ">Taste of London in Regent's Park</h3><br>
-		
-		<img src="https://london.tastefestivals.com/static/bf23414be0fe30cc83bb1ca7633aa655/Group-eating-w948.jpg" alt="A picture of  people eating" id = "images">
-		
-		<br><p id = "p2">Join London's top restaurants and celebrity chefs at Taste of London for the ultimate alfresco feast in Regent's Park. Discover a<br>
-										tantalising selection of London’s top restaurants at the Taste of London festival in Regent’s Park. Each summer, the park in<br>
-										central London is transformed into a foodie wonderland as London's best restaurants gather to show off the hottest dishes from<br>
-										their extensive menus. Plus, watch live cooking demonstrations, meet some of the capital’s leading chefs, participate in<br>
-										masterclasses and shop at the food and drink stalls.</p>		
-
-	<br><h3 style = "font-size: 24px; font-weight: 520; font-style:oblique;">August 2021 (Exact dates to be confirmed)</h3>
-	<br><h3 style = "font-size: 24px; font-weight: 520; ">Notting Hill Carnival 2021</h3><br>
-		
-	<img src="https://images.unsplash.com/photo-1591063803439-fedeb29e2125?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1534&q=80" alt="A picture of  people" id = "images">
-		
-	<br><p id = "p5">The streets of west London come alive every August bank holiday weekend with a huge Caribbean party at Europe's biggest street<br>
-									festival: Notting Hill Carnival. Join London’s biggest street party as the Notting Hill Carnival 2021 fills the streets of west London<br>
-									with Caribbean colours, music and flavours.<br><br>
-
-									Watch elaborate floats and colourful costumed performers wind their way through the streets in the carnival parade, dance to the<br>
-									sound of steel bands and calypso music, and visit the tempting food stalls along the route.Notting Hill Carnival happens every year<br>
-									on the last weekend of August, including the summer bank holiday (public holiday) Monday. However, the Notting Hill Carnival 2021<br>
-									dates are yet to be confirmed.
-									</p>													
-
-		<br><h3 style = "font-size: 24px; font-weight: 520; font-style:oblique;">From 27 August 2021 to 11 September 2021</h3>
-		<br><h3 style = "font-size: 24px; font-weight: 520; ">Greenwich Docklands International Festival 2021</h3><br>
-		
-		<img src="https://s3-eu-west-1.amazonaws.com/gdif-assets/wp-content/uploads/2020/07/22165027/20200905_PatrickZiza_Greenwell_7228_RESIZE1-1024x684.jpg" alt="A picture of  people" id = "images">
-		
-		<br><p id = "p4">Experience one of London’s largest free outdoor arts festivals, with open-air theatre, dance, art installations and music<br>
-										for all ages in Royal Greenwich and east London. See the world differently with innovative art productions, premieres and<br>
-										family activities at the Greenwich+Docklands International Festival 2021 (GDIF), which takes place across Royal Greenwich,<br>
-										Docklands and Tower Hamlets.Part of Royal Greenwich Festivals, the annual festival of outdoor theatre and performing<br>
-										arts presents an extensive programme of art installations, street theatre, circus, dance acts and music events, produced by<br>
-										UK and international artists.</p>	
-										
-										<br><h3 style = "font-size: 24px; font-weight: 520; font-style:oblique;">From 17 September 2021 to 21 September 2021</h3>
-		<br><h3 style = "font-size: 24px; font-weight: 520; ">London Fashion Week September 2021</h3><br>
-		
-		<img src="https://i.guim.co.uk/img/media/c34fee4efd82614425938d2a2aeb1c6b111f989b/0_0_3200_2133/master/3200.jpg?width=1920&quality=85&auto=format&fit=max&s=cd5765a0e381f5a1514030760fdc6bc4" alt="A picture of  people" id = "images">
-		
-		<br><p id = "p3">Join London Fashion Week events and gain insights from industry experts at the September edition of London's famous<br>
-										fashion festival. Mix with industry experts and see the latest catwalk ranges for autumn at London Fashion Week 2021 this<br>
-										September, with iconic events and activities focusing on the latest trends.<br><br>
-
-										Be inspired by the latest trends from top designers over London Fashion Week, giving you a unique opportunity to experience<br>
-										the runway action and exclusive fashion scene which was previously only invite-only.Last year's London Fashion Week shows in<br>
-										June and September were the first gender-neutral shows, with some events open to the public to access online and in person.</p>	
-										
-		<br><h3 style = "font-size: 24px; font-weight: 520; font-style:oblique;">From 23 October 2021 to 31 October 2021</h3>
-		<br><h3 style = "font-size: 24px; font-weight: 520; ">Halloween in London 2021</h3><br>
-		
-		<img src="https://static.designmynight.com/uploads/2019/10/Halloween-Ball-1_min-optimised.png" alt="A picture of  halloween party" id = "images">
-		
-		<br><p id = "p5">Find the freakiest Halloween events London has to offer on and around 31 October. Join a ghost tour, dress up for a<br>
-										Halloween party or dare to step inside spooky attractions. Experience a scarier side to London with some of the<br>
-										spookiest things to do in London for Halloween, on and around 31 October.<br><br>
-										
-										Venture into haunted venues, brave bone-chilling attractions, dare to go on special Halloween tours and find<br>
-										tricks and treats with gripping family events. Plan your Halloween in London with this roundup of gory ideas<br>
-										and horrifying activities.
-										</p><br>
-	
+							<input type = "text" name = "last_name" placeholder = "Enter surname" />
+						
+							<h4 style = "text-align: center; line-height: 20px; font-weight: lighter;"><b>Country</b></h4>
+							<div class = "Country">
+							<select name = "dropdown">
+									<option value = "Botswana" selected>Botswana</option>
+									<option value = "South Africa" selected>South Africa</option>
+									<option value = "Angola" selected>Angola</option>
+									<option value = "Mozambique" selected>Mozambique</option>
+									<option value = "Germany" selected>Germany</option>
+									<option value = "France" selected>Italy</option>
+									<option value = "United Kingdom" selected>United Kingdom</option>
+									<option value = "Poland" selected>Poland</option>
+									<option value = "Sweden" selected>Sweden</option>
+									<option value = "Croatia" selected>Croatia</option>
+							</select>
+							</div>
+							
+							<h4 style = "margin-bottom: -9.5px; font-family: Roboto, Arial, sans-serif;"><b>Region</b></h4>
+				
+							<div class = "Region">
+							<select name = "dropdown">
+									<option value = "Northern Africa" selected>Northern Africa</option>
+									<option value = "Eastern Africa" selected>Eastern Africa</option>
+									<option value = "Middle Africa" selected>Middle Africa</option>
+									<option value = "Southern Africa" selected>Southern Africa</option>
+									<option value = "Western Africa" selected>Western Africa</option>
+									<option value = "North Europe" selected>North Europe</option>
+									<option value = "West Europe" selected>West Europe</option>
+									<option value = "Central Europe" selected>Central Europe</option>
+									<option value = "South Europe" selected>South Europe</option>
+									<option value = "South East Europe" selected>South East Europe</option>
+							</select>
+							</div>
+					
+						
+						<h4 style = "margin-bottom: -4.5px; font-family: Roboto, Arial, sans-serif;"><b>Choose any newsletter of your choice</b></h4>
+								
+						
+							<div class = "newsletters">
+							<input type = "checkbox" name = "FutureofLondon" value  = "on"> FutureofLondon
+							<input type = "checkbox" name = "Londonist" value  = "on"> Londonist
+							<input type = "checkbox" name = "MyLondon" value  = "on"> MyLondon
+							<input type = "checkbox" name = "WildLondon" value  = "on"> WildLondon
+							</div>
+						
+				
+							<div class = "Subscribebutton" >
+									<br><br><a href = "thankyou.html">Subscribe</a>
+							</div>		
+						
+						</form>
+				</div>
+		</form>
 	</section>
 	
 	
